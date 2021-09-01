@@ -1,0 +1,35 @@
+                        INITIAL STEPS TO LINK GITHUB TO YOUR LOCAL SYSTEM
+
+git --version
+git config --global user.name "USERNAME"        #one time only
+git config --global user.email"EMAIL ADDRESS"   #one time only
+
+                                STEPS TO CHECK THE LINK
+                                
+git config --list                               #to check the list of configurations you entered
+ls -al                                          #to list all the files in your local system                 
+gedit .gitconfig                                #to edit the file that has stored all your entered configurations
+
+                   STEPS TO CREATE A DIRECTORY FOR YOUR WORK AND SYNC TO GITHUB
+
+mkdir name_of_directory                         #to create a directory
+cd name_of_directory                            #to enter that directory
+git clone paste.theurlhere                      #to clone your GitHub repository to your local system
+ls                                              #to check if the files from GitHub have been cloned here or not
+touch create_a_file.extension                   #to create a file in your local system to edit (and later push)
+ls                                              #to check that created file
+gedit create_a_file.extension                   #to edit that created file
+git status                                      #to check the status of sync of that created file with GitHub
+git add <filename.extension>                    #to add that file to commit
+git status                                      #to check the status again
+git commit -m "comments" filename.extention     #to commit that file to GitHub
+git push -u -u origin master                    #to push that file to your GitHub repository
+<enter your GitHub username>                    #prompted task
+<enter your GitHub password>                    #prompted task
+
+                       STEPS TO SYNC THE CHANGES YOU MADE IN YOUR GITHUB REPOSITORY TO YOUR LOCAL SYSTEM
+           
+git fetch origin master                         #to fetch the changes from your GitHub repository
+git merge origin master                         #to merge those changes to your local system
+
+

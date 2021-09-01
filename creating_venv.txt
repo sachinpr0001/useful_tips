@@ -1,0 +1,15 @@
+first, create the folder of your project.
+then enter:
+python -m venv venv
+(this will create a virtual environment named "venv")
+check what you created using "ls"
+
+to activate your virtual environment, enter:
+
+source venv/bin/activate
+
+DONE. You are in a virtual environment now.
+
+to deactivate your virtual environment, enter:
+
+deactivate
