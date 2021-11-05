@@ -1,0 +1,9 @@
+To add terminal shortcuts, navigate to the .bas_aliases and add your shortcuts.
+	
+	run this command to open the .bash_aliases file:
+	subl ~/.bash_aliases
+
+	In the .bash_aliases file, add:
+	alias shortcut-command='YOUR TERMINAL COMMAND WHICH YOU WANT TO SHORTEN'
+
+	(replace "shortcut-command" with the shortcut command you cant to use and write the command you want to shorten in the RHS inside quotes)
