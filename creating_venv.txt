@@ -6,7 +6,8 @@ check what you created using "ls"
 
 to activate your virtual environment, enter:
 
-source venv/bin/activate
+source venv/bin/activate (LINUX)
+venv\Scripts\activate (WINDOWS)
 
 DONE. You are in a virtual environment now.
 
