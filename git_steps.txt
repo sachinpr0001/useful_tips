@@ -33,3 +33,19 @@ git fetch origin master                         #to fetch the changes from your 
 git merge origin master                         #to merge those changes to your local system
 
 
+			STEPS TO WORK ON SOMEONE ELSE'S REPOSITORY AND PUSH YOUR CHANGES TO IT
+
+1. Fork your friend's repository.
+2. Fire up your terminal and type: git clone {URL}.
+3. Use this command to create a branch: git checkout -b new_branch.
+4. Create a new remote for the upstream repo i.e. the link of original repo with the command: git remote add upstream {URL}
+5. Do whatever changes you want in your local machine.
+6. Fire up your terminal again and type git add {file name} or git add . if you want to add all files.
+7. Then type a message git commit -m "message"
+8. Create a branch: git remote add upstream {URL of friend's repository that you have forked}
+9. For confirmation: git remote -v
+10. git push --set-upstream origin new_branch
+11. Go to your GitHub webpage and create a pull request for your commit.
+
+
+
